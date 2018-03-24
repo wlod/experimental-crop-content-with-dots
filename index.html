@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/index.css">
+    
+    <script type="text/javascript" src="js/cropArea.js" defer></script>
+    <script type="text/javascript" src="js/index.js" defer></script>
+    
+    <script type="text/javascript">
+    /**/
+    </script>
+    
+    <style>
+    /**/
+    </style>
+</head>
+
+<body style="background: #333; color: #fff">
+    <div id="content">
+        <div class="container" id="container-to-cut-higher-content">
+           <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <strong style="color: blue; line-height: 0.8;">magna aliqua. Ut enim ad minim veniam,</strong> quis nostrud exercitation ullamco laboris nisi ut <strong style="color: yellow; line-height: 1.2;">aliquip <em>ex</em> ea commodo</strong> consequat.</div>
+        </div>
+        <div class="buttons-container">
+            <button onClick="showCropArea('container-to-cut-higher-content', 65)">show/hide crop area</button>
+            <button onClick="cropContent('container-to-cut-higher-content', 65)">crop higher content</button>
+        </div>
+        <div class="container" id="container-to-cut-higher-content-yellow">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong style="color: blue; line-height: 0.8;">sed do eiusmod tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <strong style="color: yellow; line-height: 1.2;">aliquip <em class="em-decorator" style="font-style: normal;">ex</em> ea commodo</strong> <em class="em-decorator">consequat</em>.</div>
+        </div>
+        <div class="buttons-container">
+            <button onClick="showCropArea('container-to-cut-higher-content-yellow', 100)">show/hide crop area</button>
+            <button onClick="cropContent('container-to-cut-higher-content-yellow', 100)">crop higher content</button>
+        </div>
+        <div class="container" id="container-to-cut-lower-content">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="buttons-container">
+            <button onClick="showCropArea('container-to-cut-lower-content', 65)">show/hide crop area</button>
+            <button onClick="cropContent('container-to-cut-lower-content', 65)">crop lower content</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

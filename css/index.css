@@ -1,0 +1,32 @@
+body {
+    margin: 50px 0;
+    padding: 0;
+    text-align: center;
+}
+
+#content {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 15px;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 300px;
+    height: 125px;
+    border: 3px solid #FFF;
+    overflow: hidden;
+}
+
+.buttons-container {
+    width: 300px;
+}
+
+.em-decorator {
+    text-decoration: underline;
+}
