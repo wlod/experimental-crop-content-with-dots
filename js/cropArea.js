@@ -18,8 +18,7 @@ function showCropArea(elementId, heightToCut) {
     cropContentElement.setAttribute('id', CROP_CONTENT_PREFIX + elementId);
 
     let elementRect = element.children[0].getBoundingClientRect();
-    console.log(elementRect);
-
+    
     cropContentElement.style.position = "absolute";
     cropContentElement.style.border = "2px dotted #FFA500";
     cropContentElement.style.zIndex = "100";

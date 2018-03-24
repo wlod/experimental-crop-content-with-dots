@@ -116,11 +116,11 @@ function alignParentAttributes(removedElement, lastTextNode) {
 function retrieveParentCachedAttributes(element) {
 
     // retrieve attributes from cache - last node
-    console.log("retrieve attributes");
+    console.debug("retrieve attributes");
     for (i = 0; i < element.parentAttributes.length; i++) {
         var attr = element.parentAttributes[i];
-        console.log("attr.nodeName " + attr.nodeName);
-        console.log("te attr.nodeName " + attr.nodeName + " - attr.nodeValue " + attr.nodeValue );
+        console.debug("attr.nodeName " + attr.nodeName);
+        console.debug("te attr.nodeName " + attr.nodeName + " - attr.nodeValue " + attr.nodeValue );
         element.parent.setAttribute(attr.nodeName, attr.nodeValue);                 
     }
 
@@ -128,15 +128,15 @@ function retrieveParentCachedAttributes(element) {
 
 function clearAndCacheParentAttributes(element) {
     let parentElement = element.parent;
-    console.log("-------- cache attributes");
+    console.debug("-------- cache attributes");
     for (i = 0; i < parentElement.attributes.length; i++) {
         var attr = parentElement.attributes[i];
-        console.log("-------- push");
-        console.log(attr);
-        console.log("-------- push attr.name");
-        console.log(attr.name);
-        console.log("-------- push attr.value");
-        console.log(attr.value);
+        console.debug("-------- push");
+        console.debug(attr);
+        console.debug("-------- push attr.name");
+        console.debug(attr.name);
+        console.debug("-------- push attr.value");
+        console.debug(attr.value);
         element.parentAttributes.push(attr);
         parentElement.removeAttribute(attr.name);
     }
